@@ -8,11 +8,17 @@ namespace Task4
 {
     internal class SavingAccount:Account
     {
-        public SavingAccount(double interestRate):base(string name, double balance)
+        public SavingAccount(string name, double balance ,double interestRate):
+        base(name,balance)
         {
             InterestRate = interestRate;
         }
 
         public double InterestRate { get; set; }
+
+        public new bool Withdraw(double value)
+        {
+            return base.Withdraw(value + InterestRate);   
+        }
     }
 }

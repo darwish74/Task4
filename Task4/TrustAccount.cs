@@ -8,6 +8,11 @@ namespace Task4
 {
     internal class TrustAccount:SavingAccount 
     {
-     
+        public double Fees { get; set; }
+        public TrustAccount(string name,double balance,double interestRate):
+        base(name, balance, interestRate)
+        {
+    
+        }
     }
 }

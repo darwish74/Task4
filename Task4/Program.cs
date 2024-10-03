@@ -17,11 +17,11 @@
         AccountUtil.Withdraw(accounts, 2000);
 
         // Savings
-        var savAccounts = new List<SavingsAccount>();
-        savAccounts.Add(new SavingsAccount());
-        savAccounts.Add(new SavingsAccount("Superman"));
-        savAccounts.Add(new SavingsAccount("Batman", 2000));
-        savAccounts.Add(new SavingsAccount("Wonderwoman", 5000, 5.0));
+        var savAccounts = new List<SavingAccount>();
+        savAccounts.Add(new SavingAccount());
+        savAccounts.Add(new SavingAccount("Superman"));
+        savAccounts.Add(new SavingAccount("Batman", 2000));
+        savAccounts.Add(new SavingAccount("Wonderwoman", 5000, 5.0));
 
         AccountUtil.Display(savAccounts);
         AccountUtil.Deposit(savAccounts, 1000);

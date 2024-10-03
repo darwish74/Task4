@@ -8,12 +8,14 @@ namespace Task4
 {
     internal class AccountUtil
     {
+        // Utility helper functions for Account class
+
         public static void Display(List<Account> accounts)
         {
             Console.WriteLine("\n=== Accounts ==========================================");
             foreach (var acc in accounts)
             {
-                Console.WriteLine(acc);
+                Console.WriteLine(acc.Name);
             }
         }
 
@@ -23,9 +25,9 @@ namespace Task4
             foreach (var acc in accounts)
             {
                 if (acc.Deposit(amount))
-                    Console.WriteLine($"Deposited {amount} to {acc}");
+                    Console.WriteLine($"Deposited {amount} to {acc.Name}");
                 else
-                    Console.WriteLine($"Failed Deposit of {amount} to {acc}");
+                    Console.WriteLine($"Failed Deposit of {amount} to {acc.Name}");
             }
         }
 
@@ -35,10 +37,11 @@ namespace Task4
             foreach (var acc in accounts)
             {
                 if (acc.Withdraw(amount))
-                    Console.WriteLine($"Withdrew {amount} from {acc}");
+                    Console.WriteLine($"Withdrew {amount} from {acc.Name}");
                 else
-                    Console.WriteLine($"Failed Withdrawal of {amount} from {acc}");
+                    Console.WriteLine($"Failed Withdrawal of {amount} from {acc.Name}");
             }
         }
+
     }
 }

@@ -8,8 +8,11 @@ namespace Task4
 {
     internal class Account
     {
-        public Account() { }
-        public Account(string name, object name1, double balance)
+        public Account()
+        {
+
+        }
+        public Account(string name, double balance)
         {
             Name = name;
             Balance = balance;
