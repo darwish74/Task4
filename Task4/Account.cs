@@ -8,6 +8,7 @@ namespace Task4
 {
     internal class Account
     {
+        public Account() { }
         public Account(string name, object name1, double balance)
         {
             Name = name;
@@ -40,6 +41,11 @@ namespace Task4
             {
                 return false;
             }
+        }
+        public static Account operator+(Account left, Account right)
+        {
+            Account account = new Account() {Balance=left.Balance+right.Balance };
+            return account;
         }
     }
 }
