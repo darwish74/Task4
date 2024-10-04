@@ -9,6 +9,14 @@ namespace Task4
     internal class CheckingAccount:Account
     {
         public double Fee { get; set; }
+        public CheckingAccount()
+        {
+
+        }
+        public CheckingAccount(string name)
+        {
+            this.Name = name;
+        }
         public CheckingAccount(string name, double balance)
         :base(name, balance)
         {

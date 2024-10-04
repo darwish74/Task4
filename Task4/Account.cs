@@ -12,6 +12,10 @@ namespace Task4
         {
 
         }
+        public Account(string name)
+        {
+            this.Name = name;   
+        }
         public Account(string name, double balance)
         {
             Name = name;
