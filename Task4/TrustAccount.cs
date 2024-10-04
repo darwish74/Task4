@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Task4
 {
-    internal class TrustAccount:SavingAccount 
+    internal class TrustAccount : SavingAccount
     {
+        public TrustAccount()
+        {
+
+        }
         public int Withdrawablecount { get; set; }
+        public DateTime data { get; set; } 
         public TrustAccount(string name,double balance,double interestRate):
         base(name, balance, interestRate)
         {
