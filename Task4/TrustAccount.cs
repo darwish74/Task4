@@ -12,6 +12,15 @@ namespace Task4
         {
 
         }
+        public TrustAccount(string name)
+        {
+         this.Name = name;
+        }
+        public TrustAccount(string name,int balance)
+        {
+            this.Name=name;
+            this.Balance = balance;
+        }
         public int Withdrawablecount { get; set; }
         public DateTime data { get; set; } 
         public TrustAccount(string name,double balance,double interestRate):

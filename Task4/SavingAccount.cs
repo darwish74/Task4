@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Task4
 {
     internal class SavingAccount:Account
-    {
+    {   public SavingAccount() { }  
+        public SavingAccount(string name) { this.Name = name; }
+        public SavingAccount(string name,double balance) { this.Name = name; this.Balance = balance; }
         public SavingAccount(string name, double balance ,double interestRate):
         base(name,balance)
         {
